@@ -1,0 +1,368 @@
+/* ========================================================
+   ENTREGA 1 - CSS para el Torneo de Tennis - DTT Race 2024
+   Autor: Aitor Merodio
+   ======================================================== */
+
+/* Reset los margenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos GENERALES */
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: #f5f5f5;
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilos HEADERS */
+header {
+    background-color: #2e8b57; 
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #ffdf00; 
+}
+
+header h1 {
+    font-size: 38px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Navegación LISTA */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdf00;
+}
+
+/* Estilos de las SECCIONES GENERAL */
+section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+section h2, section h3 {
+    color: #2e8b57;
+    margin-bottom: 15px;
+}
+
+section h2 {
+    font-size: 30px;
+    border-bottom: 2px solid #d3d3d3;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    font-size: 28px;
+}
+
+section p {
+    margin-bottom: 15px;
+    color: #333333;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+blockquote {
+    border-left: 5px solid #2e8b57;
+    padding-left: 15px;
+    font-style: italic;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+}
+
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 14px;
+    color: #333333;
+    margin-top: 5px;
+}
+
+details {
+    margin-top: 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #2e8b57;
+    padding-bottom: 5px;
+}
+
+details[open] summary {
+    color: #ffdf00;
+}
+
+/* Estilos de TABLAS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #d3d3d3;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2e8b57;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tfoot td {
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+    background-color: #ffffff;
+}
+
+/* Estilos de FORMS */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #2e8b57;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="time"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #2e8b57;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #ffdf00;
+    color: #2e8b57;
+}
+
+
+/* ESTILO SECCION HITOS*/
+#hitos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px; 
+    width: 100%; 
+    
+}
+
+section#hitos h3 {
+    text-align: left; 
+    margin-right: 10px; 
+}
+
+#hitos .contenedor-lista {
+    display: flex;
+    gap: 60px;
+    justify-content: center; 
+    width: 100%; 
+}
+
+#hitos .imagen-hitos {
+    max-width: 250px; 
+    height: auto;
+    max-height: 420px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+
+/* ESTILO LISTAS ESPECIFICA */
+ul.estilo-lista, ol.estilo-lista {
+    margin-bottom: 25px; 
+    padding-left: 25px; 
+    line-height: 1.8;
+    list-style-type: none;
+}
+
+ul.estilo-lista li, ol.estilo-lista li {
+    margin-bottom: 5px; 
+    position: relative;
+    padding-left: 40px;
+    font-size: 1.1rem; 
+    color: #333; 
+    transition: color 0.3s ease-in-out;
+    list-style-type: none; 
+}
+
+ul.estilo-lista li::before, ol.estilo-lista li::before {
+    content: '✔'; 
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-size: 1.2rem;
+    list-style-type: none; 
+}
+
+ul.estilo-lista li:hover, ol.estilo-lista li:hover {
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Estilos PATROCINADORES */
+section#patrocinadores {
+    text-align: center;
+    padding: 20px;
+}
+
+section#patrocinadores h3 {
+    text-align: left; 
+    margin-right: 20px; 
+}
+
+section#patrocinadores .contenedor-imagenes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-top: 20px; 
+    
+}
+
+section#patrocinadores img {
+    width: 150px; 
+    height: auto;
+    margin: 10px;
+}
+
+section#noticias-relacionadas ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+section#noticias-relacionadas ul li {
+    position: relative; 
+    padding-left: 30px; 
+    margin-bottom: 10px; 
+    color: blue; 
+}
+
+section#noticias-relacionadas ul li:before {
+    content: '📢'; 
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+}
+
+/* Estilos FAQ */
+section#faq ul {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+section#faq ul li {
+    position: relative; 
+    padding-left: 30px; 
+    margin-bottom: 30px; 
+    color: rgb(0, 0, 1); 
+}
+
+section#faq ul li:before {
+    content: '💭'; 
+    position: absolute;
+    left: 0;
+    font-size: 23px;
+}
+
+/* Estilos de PIE DE PAGINA */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background-color: #2e8b57;
+    color: #ffffff;
+    font-size: 14px;
+}
